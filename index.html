@@ -11,7 +11,7 @@
     <section>
       <div class="interactive-square">
         <div class="block">
-          <h1 class="form-heading">What are you looking for?</h1>
+          <h1 class="form-heading">What are you looking for?<span id="astrick"><sup>*</sup></span></h1>
           <form class="form">
             <input type="radio" id="side">
             <label for="side" class="radio-button">Side</label><br>
@@ -26,7 +26,14 @@
         </div>
       </div>
       <div class="results-square">
-        <div class="clip-art"><img src="assets/cookpot.svg" /><div>
+        <div class="results-div">
+          <h3 class="results-heading">You should make:</h3>
+          <p class="results"></p>
+        </div>
+        <div class="clip-art">
+          <img src="assets/cookpot.svg" id="pot"/>
+        </div>
+        <div id="clear-block"><button id="clear-button">Clear</button></div>
       </div>
     </section>
   </body>

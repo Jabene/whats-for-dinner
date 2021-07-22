@@ -9,7 +9,7 @@ red - #ee5253
 */
 
 
-body {
+ body {
   background-image: url(assets/burger-friends.jpg);
   background-size:cover;
   background-attachment:fixed;
@@ -18,11 +18,12 @@ body {
   font-family: 'Roboto', sans-serif;
   overflow:hidden;
 }
+
 header {
-  padding: 20px 30px 20px 20px;
+  padding: 1em;
   margin: 0px;
   background-color: #0fb9b1;
-  height: 60px;
+  height:4em;
   display:flex;
   place-content:space-between;
 }
@@ -31,64 +32,91 @@ header {
 #add-recipe {
   background:white;
   border-radius: 10px;
-  width: 180px;
+  width: 10em;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:23px;
+  font-size:1.5em;
 }
 
 #page-title {
-  width:300px;
+  width:10em;
   margin:0px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:35px;
+  font-size:3em;
 }
 
 section {
   height: 100%;
   width:auto;
   padding: 0px;
-  margin: 0px;
   display:flex;
-  place-content:space-between;
+  justify-content:space-evenly;
+  align-items:center;
 }
 
-.results-square {
+.results-square,
+.interactive-square {
   background-color:rgba(225, 225, 225, .9);
   width: 35%;
-  height: 47%;
-  margin: 5% 8% 50% 5%;
+  height: 55%;
+  margin-top:-300px;
+}
+
+ .results-square {
   display:flex;
   align-items:center;
   justify-content:center;
 }
-.interactive-square {
-  background-color:rgba(225, 225, 225, .9);
-  width: 35%;
-  height: 47%;
-  margin: 5% 5% 50% 8%;
-  font-size:25px;
+
+.results-div {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  width:100%;
+  height:100%;
 }
 
-.block {
-  padding:45px;
+  #clear-button {
+  width:8rem;
+  height:3rem;
+  border-radius:8px;
+  margin: 0rem 2rem 2rem 0rem;
+  text-align:center;
+  background-color:#95a5a6;
+  border:none;
+}
+
+ #clear-block {
+  display:flex;
+  justify-content:flex-end;
+  align-self:flex-end;
+  flex-direction:row;
+  height:5rem;
+}
+
+ .block {
+  font-size:1.75em;
+  padding-left:3em;
 }
 
 .form-heading {
-  font-size:40px;
-  padding-left:5px;
+  font-size:1.75em;
+  padding-left:.2em;
+  font-weight:bold;
+  width:12em;
+  padding-top:5rem;
   }
-}
 
 label input {
   display:block;
 }
 
 input {
-  margin-bottom:40px;
+  margin-bottom:2.5em;
   border: 0px;
   height:1.5em;
   width:1.5em;
@@ -96,13 +124,44 @@ input {
 
 .form-button {
   border-radius:10px;
-  width:240px;
-  height:50px;
+  width:14em;
+  height:2.75em;
   background-color: #0fb9b1;
   border-style:none;
-  font-size:20px;
+  font-size:.75em;
 }
 
-.clip-art {
-  width: 25%;
+
+ .clip-art {
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  place-self:center;
+}
+
+#pot {
+  width:25%;
+}
+
+.results-div {
+  text-align:center;
+  padding:1em;
+}
+
+.results-heading {
+  font-size:1.5em;
+  font-style:italic;
+}
+
+.results {
+  font-size:3em;
+}
+
+.hidden {
+  display:none;
+}
+
+#astrick {
+  color:red;
 }
