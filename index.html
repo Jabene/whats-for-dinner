@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -13,13 +14,13 @@
         <div class="block">
           <h1 class="form-heading">What are you looking for?<span id="astrick"><sup>*</sup></span></h1>
           <form class="form">
-            <input type="radio" id="side">
+            <input type="radio" id="side" name="rb">
             <label for="side" class="radio-button">Side</label><br>
-            <input type="radio" id="main-dish">
+            <input type="radio" id="main-dish" name="rb">
             <label for="main-dish">Main Dish</label><br>
-            <input type="radio" id="dessert">
+            <input type="radio" id="dessert" name="rb">
             <label for="dessert">Dessert</label><br>
-            <input type="radio" id="entire-meal">
+            <input type="radio" id="entire-meal" name="rb">
             <label for="entire-meal">Entire Meal</label><br>
             <button class="form-button">LET'S COOK!</button>
           </form>
@@ -29,11 +30,20 @@
         <div class="results-div">
           <h3 class="results-heading">You should make:</h3>
           <p class="results"></p>
+          <button id="clear-button">Clear</button>
         </div>
         <div class="clip-art">
           <img src="assets/cookpot.svg" id="pot"/>
         </div>
-        <div id="clear-block"><button id="clear-button">Clear</button></div>
+      </div>
+      <div id="login">
+        <div>
+          <h1>Enter your name</h1>
+          <form id="login-form">
+            <input type="text" id="name">
+            <button id="login-button">Enter</button>
+          </form>
+        </div>
       </div>
     </section>
   </body>
