@@ -10,7 +10,7 @@
         <a id="add-recipe">ADD A RECIPE</a>
     </header>
     <section>
-      <div class="interactive-square">
+      <div class="interactive-square hidden">
         <div class="block">
           <h1 class="form-heading">What are you looking for?<span id="astrick"><sup>*</sup></span></h1>
           <form class="form">
@@ -26,17 +26,17 @@
           </form>
         </div>
       </div>
-      <div class="results-square">
-        <div class="results-div">
+      <div class="results-square hidden">
+        <div class="results-div hidden">
           <h3 class="results-heading">You should make:</h3>
           <p class="results"></p>
-          <button id="clear-button">Clear</button>
+          <button id="clear-button" class="hidden">Clear</button>
         </div>
         <div class="clip-art">
           <img src="assets/cookpot.svg" id="pot"/>
         </div>
       </div>
-      <div id="login">
+      <div class="login">
         <div>
           <h1>Enter your name</h1>
           <form id="login-form">
